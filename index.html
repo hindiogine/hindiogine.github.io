@@ -1,20 +1,85 @@
 <!DOCTYPE HTML>
-<!--
-My GitHub website.
-Testing D3.js 
--->
-<html>
-	<head>
-		<title>An Instructional Designer does Web Development</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<h1>Test D3.js</h1>
-		<p>A simple circle</p>
-		<svg>
-			<circle style="fill: #69b3a2" stroke="black" cx=50 cy=50 r=40></circle>
-		</svg>
-	</body>
+
+<h2 style="background-color: #1c5a45; color: #e4edea; padding-left: 15px; padding-top: 5px; padding-bottom: 5px; text-align: center;">Lesson Transcript</h2>
+<p style="text-align: center;"><img id="55839624" src="https://canvas.tamu.edu/courses/212506/files/55839624/preview" alt="Slide 02" width="640" height="222" data-ally-user-updated-alt="Slide 02" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55839624" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>Welcome to Computer Science 625, Artificial Intelligence. This is the first lecture video, a brief introduction to AI. I am Yoonsuck Choe, your instructor. So please see the course webpage on Canvas for my contact information and hours. All communications out of the class will be through email registered on email.tamu.edu.</p>
+<p>And the announcements on Canvas, so please check these regularly. Class Notes will be available on Canvas at least 24 hours before the class.</p>
+<p style="border-top: 6px solid #1c5a45;">&nbsp;</p>
+<p><img id="55845383" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845383/preview" alt="Slide 03" width="640" height="63" data-ally-user-updated-alt="Slide 03" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845383" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>The syllabus is available on Canvas and Howdy, so please see the syllabus for details on grading, course policy, et cetera, and the detailed schedule for this semester.</p>
+<p style="border-top: 6px solid #1c5a45;">&nbsp;</p>
+<p><img id="55845393" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845393/preview" alt="Slide 04" width="640" height="276" data-ally-user-updated-alt="Slide 04" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845393" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>First, let us look at the textbook. This is the required textbook by Russell and Norvig and is currently in its fourth edition. So this is, again, the main textbook. We may also use the third edition, which is cheaper. So just by looking at this, we can see much interesting AI-related stuff. So first, we can see some humanoid robots. The Asimo in the third edition and Boston Dynamics Atlas in the fourth edition.</p>
+<p>So chess is a big theme in both covers. So in the background, we see chess in both of these. And we can also see Garry Kasparov, the chess grandmaster, who was famously defeated by IBM's Supercomputer in 1997, so he looks unhappy. And we can also see the Mars Rover and Alan Turing, the founder of modern computer science.</p>
+<p>But very interestingly, he also was a founding father of modern AI. And we see Lady Lovelace, the first programmer, and in the third edition, we see Reverend Thomas Bayes, who developed Bayesian statistics, which is a very important part of modern machine learning and deep learning.</p>
+<p>And finally, we have Aristotle, who is an ancient philosopher from Greece. He laid out the foundation for modern science, but he also had a lot of interesting ideas about the psychology of the mind.</p>
+<p style="border-top: 6px solid #1c5a45;">&nbsp;</p>
+<p><img id="55845394" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845394/preview" alt="Slide 05" width="640" height="304" data-ally-user-updated-alt="Slide 05" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845394" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>So, the next book is optional. The title is <em>Introducing Artificial Intelligence</em> by Brighton and Selina. It provides an overview of AI, including many philosophical issues. By the way, this is a more modern rebranding of the book <em>Introducing Artificial Intelligence, A Graphic Guide</em>, which is the same book. So we can read either of these books, but again, this is optional.</p>
+<p style="border-top: 6px solid #1c5a45;">&nbsp;</p>
+<p><img id="55845396" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845396/preview" alt="Slide 06" width="640" height="232" data-ally-user-updated-alt="Slide 06" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845396" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>First, let us consider this question. What is intelligence? Here are the definitions from the textbook. The first is thinking like humans. Of course, this is a good first approximation, but how can we tell whether something is thinking like humans without observable behavior?</p>
+<p>So realizing that as a problem, we move on to the next one, acting like humans. This is good, but not good enough because humans do many stupid things, and we do not want AI to do stupid things. The next step is thinking rationally. We want to find out what kinds of activities are representative of intelligence. So we think that humans think rationally compared to animals. So we think with reason. So that is, again, another good approximation, but again, whether we're thinking rationally or not, we cannot tell without observing the behavior. So we reach the final definition, acting rationally. Based on this, we can see this quotation in the textbook.</p>
+<p><em>"We define AI as the study of agents that receive percepts from the environment and perform actions." - R&amp;N</em></p>
+<p style="border-top: 6px solid #1c5a45;">&nbsp;</p>
+<p><img id="55845397" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845397/preview" alt="Slide 07" width="640" height="272" data-ally-user-updated-alt="Slide 07" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845397" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>So here is an example of why defining intelligence is very difficult. So consider this. Who is more intelligent? There is the math professor, a kid, and a symbolic math package, <em>Wolfram Alpha Mathematica</em>.</p>
+<p>So let us compare the first two. The math professor is better than the kid in math. So the professor is more intelligent. Otherwise, they are both humans. So we think they are kind of level in terms of that. So the only distinguishing characteristic between the two is the degree of mathematics knowledge. So now let us compare the kid and <em>Wolfram Alpha</em>.</p>
+<p><em>Wolfram Alpha</em> has much more complex mathematical knowledge than the kid, but when given these two, we tend to think that the kid is more intelligent. So when comparing the first two, we use mathematics as a criterion, whereas that kind of breaks down when we compare the second pair. So what we see here is that how to set a criterion can be quite unclear.</p>
+<p style="border-top: 6px solid #1c5a45;">&nbsp;</p>
+<p><img id="55845398" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845398/preview" alt="Slide 08" width="640" height="283" data-ally-user-updated-alt="Slide 08" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845398" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>We can also learn a lot about how people, the general public, think about AI by looking at Hollywood movies and so on. So let us take a look at some of these. The first one is <em>Westworld</em>. Before the HBO series, this movie came out many decades ago and is loosely based on the same concept. In this movie, humans built pleasure robots, became self-aware, and revolted against humans.</p>
+<p>In <em>iRobot</em>, based on Isaac Asimov's novels, is a similar story where robots gain autonomy and rebel against humans. A more recent movie, <em>Her</em>, features a conscious chatbot. So we can think about the movies we watched and how AI is depicted in these movies.</p>
+<p style="border-top: 6px solid #1c5a45;">&nbsp;</p>
+<p><img id="55845399" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845399/preview" alt="Slide 09" width="640" height="280" data-ally-user-updated-alt="Slide 09" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845399" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>What is AI in terms of the course we will go through this semester? AI includes diverse topics such as problem-solving, reasoning, theorem proving, learning, planning, knowledge, representation, perception and robotics, agents, and, more recently, deep learning. Also, AI ethics has become a big topic lately.</p>
+<p style="border-top: 6px solid #1c5a45;">&nbsp;</p>
+<p><img id="55845401" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845401/preview" alt="Slide 10A" width="640" height="156" data-ally-user-updated-alt="Slide 10A" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845401" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>There are two broad approaches, or stances, in AI. The first is strong AI. In strong AI, people want to build a machine capable of thought, consciousness, and emotions equaling that of humans. They assume that humans are no more than elaborate computers. Because of this, they view the computer model as the mind.</p>
+<p>&nbsp;</p>
+<p><img id="55845402" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845402/preview" alt="Slide 10B" width="640" height="138" data-ally-user-updated-alt="Slide 10B" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845402" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>Whereas on the opposite end, there is weak AI. In weak AI, people want to develop a series of human and animal intelligence and then test these series by building working models, usually in the form of computer programs or robots. Here, the working models are viewed as tools to aid in our understanding of intelligence, and because of this, they do not claim that the machines themselves are capable of thought, consciousness, and emotions.</p>
+<p style="border-top: 6px solid #1c5a45;">&nbsp;</p>
+<p><img id="55845403" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845403/preview" alt="Slide 11A" width="640" height="152" data-ally-user-updated-alt="Slide 11A" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845403" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>There are problems with both approaches. For strong AI, it is hard to determine if something is truly consciously intelligent or not, so this is called the <strong>other minds problem</strong> in philosophy. I know I am conscious, but I can never tell whether anyone else, including us, or our families, is conscious.</p>
+<p>&nbsp;</p>
+<p><img id="55845404" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845404/preview" alt="Slide 11B" width="640" height="59" data-ally-user-updated-alt="Slide 11B" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845404" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>For weak AI, the problem is that the stated goal limits the utility of the results. Also, it is hard to achieve <strong>general usefulness</strong> as in true intelligence.</p>
+<p style="border-top: 6px solid #1c5a45;">&nbsp;</p>
+<p><img id="55845405" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845405/preview" alt="Slide 12" width="640" height="242" data-ally-user-updated-alt="Slide 12" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845405" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>So we can ask how we should do AI. Think about a different domain, aerospace engineering, in which we have succeeded. So why should not we just engineer AI in the same way that people engineered airplanes? So first consider flight. In this case, the goal is very simple, and we know when a thing is flying. For example, if it flows in the air and moves a certain number of miles, then we can see that it is flying.</p>
+<p>However, intelligence is very different. The goal is very complex and hard to define clearly, as we have seen earlier. Also, intelligence is a collection of many different abilities. There are many ways to meet a single clear goal in the case of flight, but there can be only a small number of ways to simultaneously meet a huge number of unclearly defined goals in the case of intelligence.</p>
+<p style="border-top: 6px solid #1c5a45;">&nbsp;</p>
+<p><img id="55845406" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845406/preview" alt="Slide 13" width="640" height="226" data-ally-user-updated-alt="Slide 13" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845406" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>So why should we not follow the plane model? So even for the aerospace engineering approach, certain things may seem physically impossible given the aerospace engineering theory. For example, in terms of efficiency and so on. Let us consider the flight of flies. Researchers have found that flapping the wings cannot generate enough lift for their body weight.</p>
+<p>But we know they do fly, and we cannot use theories or engineering products based on jet turbines to explain how flies achieve this impossible feat. An interesting recent discovery was that flies gyrate their wings to generate a vortex to create greater lift.</p>
+<p style="border-top: 6px solid #1c5a45;">&nbsp;</p>
+<p><img id="55845407" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845407/preview" alt="Slide 14" width="640" height="259" data-ally-user-updated-alt="Slide 14" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845407" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>So the lesson here is that if we fail to build the impossible, study an existing solution. Here is an illustration from the paper which describes this finding.</p>
+<p>By gyrating their wings, these flies generate some kind of vortex at the wing's tip and at the wing's leading edge, which generates this necessary lift.</p>
+<p style="border-top: 6px solid #1c5a45;">&nbsp;</p>
+<p><img id="55845408" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845408/preview" alt="Slide 15" width="640" height="250" data-ally-user-updated-alt="Slide 15" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845408" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>Well, then, how should we do AI? Here is my perspective.&nbsp; Because the brain is the only known solution to the problem of intelligence, it is important to study brain function, and we need to study the influence of environmental irregularities on brain development and function because the brain is shaped by the external environment and the regularities that occur in it. Also, we need to take into consideration the interaction of the brain with the environment through action, and we also need to pay attention to prediction and exploiting the external medium. Finally, a very interesting perspective would be to look at tool construction and tool use and how the complexity of the tool co-evolves with the complexity of intelligence.</p>
+<p>So the broad lesson here is that we must think about the more fundamental issues occasionally when research seems to be at a dead end.</p>
+<p style="border-top: 6px solid #1c5a45;">&nbsp;</p>
+<p><img id="55845409" style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.tamu.edu/courses/212506/files/55845409/preview" alt="Slide 16" width="640" height="197" data-ally-user-updated-alt="Slide 16" data-api-endpoint="https://canvas.tamu.edu/api/v1/courses/212506/files/55845409" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p>So, we had some very interesting considerations regarding theories about intelligence and perhaps the origin of intelligence, but we have to focus on our semester course. So all of this sounds pretty interesting but is a little bit unrealistic. Hence, in this course, we will study strategies employed by humans in dealing with real-world problems, and these include all of the topics listed earlier, like problem-solving, theorem proving, learning, and so on, and the hope is that the background we learn in this course will enable us to appreciate the deepness of the problems and to pursue further interest in AI and human and machine intelligence in general.</p>
+<p>&nbsp;</p>
 </html>
